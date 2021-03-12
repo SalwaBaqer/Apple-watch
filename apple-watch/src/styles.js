@@ -38,3 +38,13 @@ export const NavStyled = styled.div`
 export const Logo = styled.img`
   width: 4%;
 `;
+export const Title = styled.h1`
+  width: 4%;
+`;
+
+export const ToggleButtonWrapper = styled.div`
+  margin-top: 550px;
+  margin-bottom: 5px;
+  margin-right: 500px;
+  margin-left: 500px;
+`;

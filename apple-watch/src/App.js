@@ -1,7 +1,7 @@
 //components
 import SlideShow from "./components/SlideShow";
 import NavBar from "./components/NavBar";
-import About from "./components/About";
+import ToggleButton from "./components/ToggleButton";
 
 //style
 import { ThemeProvider } from "styled-components";
@@ -9,7 +9,7 @@ import { ThemeProvider } from "styled-components";
 const theme = {
   mainColor: "#242424",
   backgroundColor: "rgba(0, 0, 0, 0.9)",
-  AboutBackgroundColor: "red",
+  ToggleButtonBackgroundColor: "red",
 };
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <NavBar />
 
       <SlideShow />
-      <About />
+      <ToggleButton />
     </ThemeProvider>
   );
 }
