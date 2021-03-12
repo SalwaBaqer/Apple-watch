@@ -15,7 +15,7 @@ import apple5 from "../images/apple5.png";
 import apple6 from "../images/apple6.png";
 
 //styles
-import { ImageStyled, ImageWatchStyled, BackgroundDiv } from "../styles";
+import { ImageStyled, ImageWatchStyled } from "../styles";
 
 function SlideShow() {
   const [index, setIndex] = useState(0);
@@ -26,64 +26,35 @@ function SlideShow() {
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
-      <ImageWatchStyled src={watch} alt="Second slide" />
       {/* image 1  */}
       <Carousel.Item>
-        <BackgroundDiv></BackgroundDiv>
+        <ImageStyled src={apple1} alt="Second slide" />
       </Carousel.Item>
       {/* image 2  */}
       <Carousel.Item>
         <ImageStyled src={apple2} alt="Second slide" />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
       </Carousel.Item>
 
       {/* image 3 */}
       <Carousel.Item>
         <ImageStyled src={apple3} alt="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
       </Carousel.Item>
 
       {/* image 4 */}
       <Carousel.Item>
         <ImageStyled src={apple4} alt="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
       </Carousel.Item>
 
       {/* image 5 */}
       <Carousel.Item>
         <ImageStyled src={apple5} alt="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
       </Carousel.Item>
 
       {/* image 6 */}
       <Carousel.Item>
         <ImageStyled src={apple6} alt="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
       </Carousel.Item>
+      <ImageWatchStyled src={watch} alt="Second slide" />
     </Carousel>
   );
 }

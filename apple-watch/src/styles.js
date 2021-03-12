@@ -14,10 +14,7 @@ export const ImageStyled = styled.img`
   margin-left: 130px;
 `;
 export const ImageWatchStyled = styled.img`
-  width: 320px;
-  justify-content: centre;
-`;
-
-export const BackgroundDiv = styled.div`
-  background-image: url(${apple1});
+  width: 300px;
+  margin-top: 30px;
+  margin-left: 150px;
 `;
