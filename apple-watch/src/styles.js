@@ -1,44 +1,40 @@
-import styled, { createGlobalStyle } from "styled-components";
-
-//image
-import watch from "./images/watch.png";
-import apple1 from "./images/apple1.png"
-export const GlobalStyle = createGlobalStyle`
-body{
-    background-color: ${(props) => props.theme.backgroundColor}
-}
-`;
+import styled from "styled-components";
 
 export const ImageStyled = styled.img`
   width: 350px;
-  margin-left: 550px;
-  margin-right:550px;
-  margin-bottom:50px;
-z-index:10;
-
+  margin-left: 480px;
+  margin-right: 450px;
+  margin-bottom: 50px;
+  z-index: 10;
 `;
 export const StyledWrapper = styled.div`
-position: relative;
-
+  position: relative;
+  background-color: ${(props) => props.theme.backgroundColor};
 `;
 
-export const WatchStyled=styled.img`
-width:350px;
-/* margin-top:20px; */
-margin-left:550px;
-margin-right:580px;
-  
-       position: absolute;
-       z-index:20;
+export const WatchStyled = styled.img`
+  width: 350px;
+  /* margin-top:20px; */
+  margin-left: 480px;
+  margin-right: 480px;
+  position: absolute;
+  z-index: 20;
 `;
-export const TopDivStyle=styled.div`
-position: absolute;
-margin-right:100px;
+export const TopDivStyle = styled.div`
+  position: absolute;
+  margin-right: 100px;
+  background-color: ${(props) => props.theme.backgroundColor};
+`;
+export const ButtomDivStyle = styled.div`
+  z-index: 9;
+  margin-right: 100px;
+  background-color: black;
+`;
 
+export const NavStyled = styled.div`
+  width: 100%;
+`;
 
-`
-export const ButtomDivStyle=styled.div`
-z-index: 9;
-margin-right:100px;
-
-`
+export const Logo = styled.img`
+  width: 4%;
+`;
