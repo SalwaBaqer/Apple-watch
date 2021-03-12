@@ -15,7 +15,7 @@ import apple5 from "../images/apple5.png";
 import apple6 from "../images/apple6.png";
 
 //styles
-import { ImageStyled, ImageWatchStyled } from "../styles";
+import { ImageStyled, StyledWrapper, WatchStyled,TopDivStyle,ButtomDivStyle} from "../styles";
 
 function SlideShow() {
   const [index, setIndex] = useState(0);
@@ -25,10 +25,15 @@ function SlideShow() {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <StyledWrapper>
+      
+      <TopDivStyle>
+      <Carousel activeIndex={index} onSelect={handleSelect}>
+  
       {/* image 1  */}
+
       <Carousel.Item>
-        <ImageStyled src={apple1} alt="Second slide" />
+      <ImageStyled src={apple1} alt="Second slide" />
       </Carousel.Item>
       {/* image 2  */}
       <Carousel.Item>
@@ -54,8 +59,15 @@ function SlideShow() {
       <Carousel.Item>
         <ImageStyled src={apple6} alt="Third slide" />
       </Carousel.Item>
-      <ImageWatchStyled src={watch} alt="Second slide" />
+    
     </Carousel>
+    </TopDivStyle>
+    <ButtomDivStyle>
+<WatchStyled src={watch} alt="watch"/>
+
+    </ButtomDivStyle>
+    </StyledWrapper>
+    
   );
 }
 
