@@ -13,6 +13,9 @@ import apple3 from "../images/apple3.png";
 import apple4 from "../images/apple4.png";
 import apple5 from "../images/apple5.png";
 import apple6 from "../images/apple6.png";
+import apple7 from "../images/apple7.png";
+import apple8 from "../images/apple8.png";
+import apple9 from "../images/apple9.png";
 
 //styles
 import { ImageStyled, StyledWrapper, WatchStyled,TopDivStyle,ButtomDivStyle} from "../styles";
@@ -59,8 +62,21 @@ function SlideShow() {
       <Carousel.Item>
         <ImageStyled src={apple6} alt="Third slide" />
       </Carousel.Item>
-    
+       {/* image 7 */}
+      <Carousel.Item>
+        <ImageStyled src={apple7} alt="Third slide" />
+      </Carousel.Item>
+      {/* image 8 */}
+      <Carousel.Item>
+        <ImageStyled src={apple8} alt="Third slide" />
+      </Carousel.Item>
+      
+      {/* image 9 */}
+      <Carousel.Item>
+        <ImageStyled src={apple9} alt="Third slide" />
+      </Carousel.Item>
     </Carousel>
+    
     </TopDivStyle>
     <ButtomDivStyle>
 <WatchStyled src={watch} alt="watch"/>
