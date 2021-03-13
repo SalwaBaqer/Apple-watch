@@ -1,5 +1,11 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
+export const GlobalStyle = createGlobalStyle`
+  body {
+   
+    background-color: ${(props) => props.theme.backgroundColor}
+  }
+`;
 export const ImageStyled = styled.img`
   width: 350px;
   margin-left: 480px;
@@ -9,7 +15,6 @@ export const ImageStyled = styled.img`
 `;
 export const StyledWrapper = styled.div`
   position: relative;
-  background-color: ${(props) => props.theme.backgroundColor};
 `;
 
 export const WatchStyled = styled.img`
@@ -23,7 +28,6 @@ export const WatchStyled = styled.img`
 export const TopDivStyle = styled.div`
   position: absolute;
   margin-right: 100px;
-  background-color: ${(props) => props.theme.backgroundColor};
 `;
 export const ButtomDivStyle = styled.div`
   z-index: 9;
@@ -32,6 +36,7 @@ export const ButtomDivStyle = styled.div`
 `;
 
 export const NavStyled = styled.div`
+  margin-top: 1150px;
   width: 100%;
 `;
 
@@ -43,8 +48,15 @@ export const Title = styled.h1`
 `;
 
 export const ToggleButtonWrapper = styled.div`
-  margin-top: 550px;
-  margin-bottom: 5px;
+  margin-top: 600px;
+  margin-bottom: 400px;
   margin-right: 500px;
   margin-left: 500px;
+`;
+export const ToggleWrapperStyled = styled.div`
+  margin-bottom: 00px;
+`;
+export const Explosion = styled.img`
+  width: 100%;
+  height: 100%;
 `;

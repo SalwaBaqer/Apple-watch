@@ -1,12 +1,18 @@
-import { ToggleButtonWrapper } from "../styles";
+import { ToggleButtonWrapper, ToggleWrapperStyled } from "../styles";
 import "../test.scss";
 
-function ToggleButton() {
+function ToggleButton({ isEmpty, setisEmpty }) {
   return (
-    <ToggleButtonWrapper>
-      <input type="checkbox" id="c3d" />
-      <label for="c3d">light</label>
-    </ToggleButtonWrapper>
+    <ToggleWrapperStyled>
+      <ToggleButtonWrapper>
+        <input
+          type="checkbox"
+          id="c3d"
+          onClick={() => (isEmpty ? setisEmpty(false) : setisEmpty(true))}
+        />
+        <label for="c3d">light</label>
+      </ToggleButtonWrapper>
+    </ToggleWrapperStyled>
   );
 }
 

@@ -11,7 +11,7 @@ function NavBar() {
         </a>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ml-auto">
-            <a onClick={() => window.scroll(0, 1000)}>About</a>
+            <a onClick={() => window.scroll(0, 800)}>About</a>
             {/* <a className="nav-item nav-link" href="#">
               Features
             </a> */}
